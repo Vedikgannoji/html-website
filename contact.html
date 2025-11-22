@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('contact-hero.jpg'); /* Replace with your image */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .contact {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .contact h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            padding: 10px;
+            background-color: #ff5733;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .map {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        footer {
+            backface-visibility: hidden;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .fast{
+            background-image: url("https://wallpapercat.com/w/full/4/1/a/945734-1920x1080-desktop-full-hd-matte-black-background.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="fast">
+    <header>
+        <div class="logo">Travel Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </section>
+
+    <section class="hero">
+        <h2>Get in Touch</h2>
+        <p>If you have any questions or need assistance, feel free to reach out to us!</p>
+
+        <div class="contact-details">
+            <p><strong>Email:</strong> info@travelexplorer.com</p>
+            <p><strong>Phone:</strong> +1 (234) 567-8901</p>
+            <p><strong>Address:</strong> 123 Travel Lane, Adventure City, AC 12345</p>
+        </div>
+
+        <h2>Contact Form</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="map">
+            <h2>Our Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449105.77678160026!2d76.69661750649463!3d28.43015141939302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1dbb2cd03d79%3A0xaa82d98623b12b74!2sMuradabadi%20Hills!5e0!3m2!1sen!2sin!4v1736522489168!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

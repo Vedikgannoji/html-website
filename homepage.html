@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1c91f1;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('hero-image.jpg'); /* Replace with your image */
+            background-size: cover;
+            color: rgb(246, 245, 253);
+            text-align: center;
+            padding: 100px 20px;
+            border-radius: 5px;
+            
+            
+        }
+
+        .cta-button {
+            background-color: #ff5733;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: dotted;
+            border-radius: 5px;
+        }
+
+        .destinations {
+            padding: 20px;
+            text-align: center;
+            color: antiquewhite;
+        }
+
+        .destination-card {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            border: 10px solid #f3f0f0;
+            border-radius: 30px;
+            overflow:hidden;
+            box-shadow: 0 2px 5px rgba(4, 209, 21, 0.1);
+            background-color: rgb(250, 255, 255);
+            color: rgb(0, 0, 0);
+            font-size: 15px;
+            height: 350px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination-card h3 {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color:  #5d9fd6;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .body{
+            background-image: url("https://wallpapers.com/images/featured/4k-nature-ztbad1qj8vdjqe0p.jpg");
+            background-size: cover;
+
+        }
+        .footer {
+            backface-visibility: hidden;
+            color: rgb(3, 2, 2);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="body">
+    <header>
+        <div class="logo">Travel Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" >
+        
+         <h1>Explore the World with Us</h1>
+         <p>Your adventure starts here!</p>
+         <a href="https://www.makemytrip.com/tripideas/places-to-visit-in-india" class="cta-button">Discover Now</a>
+        
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Featured Destinations</h2>
+        <div class="destination-card">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/15/6d/d6/paris.jpg?w=1400&h=1400&s=1" alt="Paris"> <!-- Replace with your image -->
+            <h3>Paris</h3>
+            <p>The city of lights and love.</p>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIwJ75EZaQKswJ09kOrNTyPdjInbWQJXQO2lH6XFqUCNiMSqnl5I1_fZQ62gIBwt04BH4&usqp=CAU" alt="Bali"> <!-- Replace with your image -->
+            <h3>Bali</h3>
+            <p>A tropical paradise awaits you.</p>
+        </div>
+        <div class="destination-card">
+            <img src="https://static.turisanda.it/dam/jcr:0ac0e706-a74c-4b16-8acb-aa39e7de1df6/640x640_ny_full-esperience_manhattan-aeral-view.jpg" alt="New York"> <!-- Replace with your image -->
+            <h3>New York</h3>
+            <p>The city that never sleeps.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>

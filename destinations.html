@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations - Travel Explorer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1c91f1;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            background-image: url('destinations-hero.jpg'); /* Replace with your image */
+            background-size: cover;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            padding: 100px 20px;
+          
+        }
+
+        .destinations {
+            padding: 20px;
+            text-align: center;
+            color: #02182b;
+
+            
+        }
+
+        .destination-card {
+            display: inline-block;
+            margin: 20px;
+            width: 200px;
+            border: 5px solid #f1f2f3;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(5, 97, 184, 0.1);
+            background-color: rgb(246, 248, 248);
+            color: black;
+            font-size: 15px;
+            height: 300px;
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .destination-card h3 {
+            margin: 10px 0;
+        }
+
+        .destination-card-transform:hover{
+            opacity: 0.5;
+            transform: scale(1.5);
+        }
+
+        footer {
+            backface-visibility: hidden;
+            color: rgb(3, 2, 2);
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .body{
+            background-image: url("https://media.istockphoto.com/id/462436691/photo/blue-sky.jpg?s=612x612&w=0&k=20&c=YuB6pPVAlfFAOwrHIzLPtwlR8EMGpAwkKjtqWj7h5yg=");
+            background-size: cover;
+
+        }
+        .scroll-container{
+            width: 100%;
+            overflow: hidden;
+            background-image: url("https://media.istockphoto.com/id/180969335/photo/amazing-cloud-with-blue-sky.jpg?s=612x612&w=0&k=20&c=Z1LggRqPqBR5rtga7KX4O2OP57xXsYy8BsD7TG-uCcU=");
+            white-space: nowrap;
+
+        }
+
+        .scroll-container img{
+            height: 200px;
+            margin: 0 10px;
+            display: inline-block;
+            animation: scroll 10s linear infinite;
+        }
+        @keyframes scroll{
+            0%{
+                transform: translate(100%);
+            }
+            100%{
+                transform: translate(-100%);
+            }
+        }
+
+    </style>
+</head>
+<body class="body">
+    <header>
+        <div class="logo">Travel Explorer</div>
+        <nav>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="aboutuspage.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Explore Our Destinations</h1>
+        <p>Find your next adventure!</p>
+    </section>
+
+    <section class="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-card">
+            <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/07/9b/a6/23.jpg" alt="Agra"> <!-- Replace with your image -->
+            <h3>Agra</h3>
+            <p> one of the New Seven Wonders of the World.</p>
+            <a href="Agra-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCkzs9WIDTAahMcFBCBTuO9fK5N8uYiFoCw&s" alt="Kerala"> <!-- Replace with your image -->
+            <h3>Kerala</h3>
+            <p>  Kerala offers a more subdued introduction to the country.</p>
+            <a href="Kerala-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsLViZtk9l0yRfk3plHLcyOyRJahdGrpy72Q&s" alt="Paris"> <!-- Replace with your image -->
+            <h3>Paris</h3>
+            <p>The city of lights and love.</p>
+            <a href="paris-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiekN9kgQa6AUI2qpzi8EUSj0M4HeVbgTLbw&s" alt="Bali"> <!-- Replace with your image -->
+            <h3>Bali</h3>
+            <p>A tropical paradise awaits you.</p>
+            <a href="bali-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://cdn.britannica.com/61/93061-050-99147DCE/Statue-of-Liberty-Island-New-York-Bay.jpg" alt="New York"> <!-- Replace with your image -->
+            <h3>New York</h3>
+            <p>The city that never sleeps.</p>
+            <a href="newyork-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJzU5l2ZBEYBLFJqF8xkImkOBVj9oWItDGGQ&s" alt="Tokyo"> <!-- Replace with your image -->
+            <h3>Tokyo</h3>
+            <p>A vibrant city blending tradition and modernity.</p>
+            <a href="tokyo-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSW-IsOdzOy3a07Rz0fVtSOn7kOqGUHDk6XOA&s" alt="Sydney"> <!-- Replace with your image -->
+            <h3>Sydney</h3>
+            <p>Home to the iconic Sydney Opera House.</p>
+            <a href="sydney-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_3KOeSjMN70zS16oUuYQDGCdMaBUNdQuh5g&s" alt="barcelona"> <!-- Replace with your image -->
+            <h3>barcelona</h3>
+            <p>Home to the fantastic art and architecture.</p>
+            <a href="barcelona-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://res.cloudinary.com/picolo/image/fetch/f_webp,q_90,w_1600/https://res.cloudinary.com/picolo/image/upload/v1669217815/Picolo/City/Rome/First%2520time%2520in%2520Rome/Italy_Rome_Saint-Peters-Square_Travel_Picolo_Skyline_View.jpg" alt="rome"> <!-- Replace with your image -->
+            <h3>rome</h3>
+            <p>It' nicknamed the Eternal City for a reason.</p>
+            <a href="rome-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://images.squarespace-cdn.com/content/v1/6397e1ebbb148c2e8ac0b037/28bd2e1a-71d4-4dbf-b8a9-b34bdee409a8/London_1_2019-4508.jpg" alt="london"> <!-- Replace with your image -->
+            <h3>London</h3>
+            <p>London, the heart of England, stands as a vibrant mosaic of history, culture, and innovation</p>
+            <a href="london-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://deih43ym53wif.cloudfront.net/dubai-palm-jumeirah-island-shutterstock_1291548640.jpg_3ab124c2b9.jpg" alt="Dubai"> <!-- Replace with your image -->
+            <h3>Dubai</h3>
+            <p> Dubai is one of the seven Emirates</p>
+            <a href="dubai-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2023-03/30/full/1680163933-2575.jpg?im=FeatureCrop,size=(826,465)https://bsmedia.business-standard.com/_media/bs/img/article/2023-03/30/full/1680163933-2575.jpg?im=FeatureCrop,size=(826,465)" alt="Singapore"> <!-- Replace with your image -->
+            <h3>Singapore</h3>
+            <p> Singapore is the fifth most visited city in the world with 14.67 million visitors in 2023.</p>
+            <a href="Singapore-details.html">Learn More</a>
+        </div>
+        <div class="destination-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvUOPBD07k-2BF50U2De6SijJRzeFSVCLwyQ&s" alt="Maldives"> <!-- Replace with your image -->
+            <h3>Maldives</h3>
+            <p>Topping the global list is the enchanting paradise . </p>
+            <a href="maldies-details.html">Learn More</a>
+        </div>
+
+    </section>
+    <section>
+        <div class="scroll-container">
+            <img src="https://offsprout.com/wp-content/uploads/2019/04/adult-blur-camera-368893.jpg" alt="img1">
+            <img src="https://media.istockphoto.com/id/956316084/photo/influencer-tourist-hiking-and-vlogging-on-the-mountain-top.jpg?s=612x612&w=0&k=20&c=sH5gody4HwnOPKTwmgRVLDlNrLUOAbRCObFhgbYEcYg=" alt="img2">
+            <img src="https://media.istockphoto.com/id/606708818/photo/man-texting-in-the-mountain.jpg?s=612x612&w=0&k=20&c=NoBUWG2IXRN04avJV8IPvKoQ_IoCHmLBRw3bpmnZSSM=" alt="img3">
+            <img src="https://www.shutterstock.com/image-photo/young-female-travel-blogger-sitting-260nw-1500799619.jpg" alt="img4">
+            <img src="https://www.shutterstock.com/image-photo/travel-photographer-equipment-on-rocky-260nw-267670610.jpg" alt="img5">
+            <img src="https://www.shutterstock.com/image-photo/young-smiling-woman-backpacker-using-260nw-2179079265.jpg" alt="img6">
+            <img src="https://www.shutterstock.com/image-photo/young-woman-freelancer-traveler-working-260nw-2185291845.jpg" alt="img7">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROMWZ_QFW5DXoHr9AoQNZt1tQP4ZpxcSKGNmXxmqWWzjtPfVWnoUPl22bOS4HkAfPtg9s&usqp=CAU" alt="img8">
+    
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Travel Explorer. All rights reserved.</p>
+    </footer>
+</body>
+</html>
